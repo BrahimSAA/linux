@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>TCM - Linux 101</title>
+<link href="styles.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" rel="stylesheet"/>
+<style>
+        .video-container {
+            width: 100%;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+        .drive-iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+<header>
+<nav class="wrapper">
+<i class="fa-solid fa-angle-left arrow" id="left"></i>
+<ul class="carousel">
+<!-- Navigation items will be inserted here -->
+<li class="card"><a href="index.html">1. Introduction</a></li>
+<li class="card"><a href="s2.html">2. Getting Started</a></li>
+<li class="card"><a href="s3.html">3. Files and the Filesystem</a></li>
+<li class="card"><a href="s4.html">4. Users and Groups</a></li>
+<li class="card"><a href="s5.html">5. Installing Software</a></li>
+<li class="card"><a href="s6.html">6. Shells</a></li>
+<li class="card" id="actuel"><a href="s7.html">7. More Utilities</a></li>
+<li class="card"><a href="s8.html">8. Text Editors</a></li>
+<li class="card"><a href="s9.html">9. Process Management</a></li>
+<li class="card"><a href="s10.html">10. Regular Expressions</a></li>
+<li class="card"><a href="s11.html">11. Scripting</a></li>
+<li class="card"><a href="s12.html">12. Conclusion</a></li></ul>
+<i class="fa-solid fa-angle-right arrow" id="right"></i>
+</nav>
+</header>
+<!-- Navigation buttons -->
+<button class="arrow-button" id="left-arrow" onclick="navigate('s6.html')">←</button>
+<button class="arrow-button" id="right-arrow" onclick="navigate('s8.html')">→</button>
+<main>
+<!-- Video sections will be inserted here -->
+
+<section class="section" id="section36">
+<h2 class="video-title">36. Searching and Processing Text</h2>
+<div class="video-container">
+<iframe allow="autoplay" allowfullscreen="" class="drive-iframe" src="https://drive.google.com/file/d/1_YOPPos0jN13E7OFLdPNEs6fMQ_ZKloY/preview">
+</iframe>
+</div>
+<button class="complete-btn">Mark as Complete</button>
+<button class="unmark-btn">Unmark</button>
+<button onclick="navigateToSection('prev', 0)">Previous Video</button>
+<button onclick="navigateToSection('next', 0)">Next Video</button>
+<textarea class="notes-input" id="notes36" placeholder="Write your notes here..."></textarea>
+</section>
+<section class="section" id="section37">
+<h2 class="video-title">37. Manipulating Text</h2>
+<div class="video-container">
+<iframe allow="autoplay" allowfullscreen="" class="drive-iframe" src="https://drive.google.com/file/d/1_pupx9fuMFmW4oI06wi0SRKMkJbLwtKW/preview">
+</iframe>
+</div>
+<button class="complete-btn">Mark as Complete</button>
+<button class="unmark-btn">Unmark</button>
+<button onclick="navigateToSection('prev', 1)">Previous Video</button>
+<button onclick="navigateToSection('next', 1)">Next Video</button>
+<textarea class="notes-input" id="notes37" placeholder="Write your notes here..."></textarea>
+</section>
+<section class="section" id="section38">
+<h2 class="video-title">38. Networking at the Command Line</h2>
+<div class="video-container">
+<iframe allow="autoplay" allowfullscreen="" class="drive-iframe" src="https://drive.google.com/file/d/1_lMKi3t9x1k8qN6jeeXkJOLQBtjzQmZc/preview">
+</iframe>
+</div>
+<button class="complete-btn">Mark as Complete</button>
+<button class="unmark-btn">Unmark</button>
+<button onclick="navigateToSection('prev', 2)">Previous Video</button>
+<button onclick="navigateToSection('next', 2)">Next Video</button>
+<textarea class="notes-input" id="notes38" placeholder="Write your notes here..."></textarea>
+</section>
+<section class="section" id="section39">
+<h2 class="video-title">39. File Transfer Utilities</h2>
+<div class="video-container">
+<iframe allow="autoplay" allowfullscreen="" class="drive-iframe" src="https://drive.google.com/file/d/1_iv6RAgimdlY_dq558yE8B5u7l-rHs20/preview">
+</iframe>
+</div>
+<button class="complete-btn">Mark as Complete</button>
+<button class="unmark-btn">Unmark</button>
+<button onclick="navigateToSection('prev', 3)">Previous Video</button>
+<button onclick="navigateToSection('next', 3)">Next Video</button>
+<textarea class="notes-input" id="notes39" placeholder="Write your notes here..."></textarea>
+</section>
+<section class="section" id="section40">
+<h2 class="video-title">40. Converting Text Files</h2>
+<div class="video-container">
+<iframe allow="autoplay" allowfullscreen="" class="drive-iframe" src="https://drive.google.com/file/d/1_j53WsJs80zdAqkE7HZcnYQXkBgq1kfD/preview">
+</iframe>
+</div>
+<button class="complete-btn">Mark as Complete</button>
+<button class="unmark-btn">Unmark</button>
+<button onclick="navigateToSection('prev', 4)">Previous Video</button>
+<button onclick="navigateToSection('next', 4)">Next Video</button>
+<textarea class="notes-input" id="notes40" placeholder="Write your notes here..."></textarea>
+</section>
+</main>
+<!-- Footer elements -->
+<div class="footer-buttons">
+<button id="backToTop" style="display: none;">
+<i class="fas fa-arrow-up"></i>
+</button>
+<button id="exportButton">
+<i class="fas fa-file-export"></i>
+</button>
+<input accept=".json" id="importButton" type="file"/>
+<button id="importDataButton">
+<i class="fas fa-file-import"></i>
+</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
